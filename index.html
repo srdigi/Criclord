@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cric Skill Lord™ – IPL Match Intelligence</title>
+<title>Cric Skill Lord™ – IPL Skill Hub</title>
 
 <!-- META PIXEL -->
 <script>
@@ -31,62 +31,57 @@ fbq('track','PageView');
   font-family:'Segoe UI',system-ui,sans-serif;
 }
 
-/* IPL BACKGROUND */
+/* PURE LIGHT BACKGROUND */
 body{
   min-height:100vh;
   display:flex;
   justify-content:center;
   align-items:center;
-  background:
-    radial-gradient(circle at top,#5f2cff,#12002b 70%);
+  background:linear-gradient(135deg,#ffffff,#f4f8ff,#ffffff);
 }
 
-/* MAIN CARD */
+/* CARD */
 .container{
   width:92%;
   max-width:420px;
-  padding:32px 26px;
-  border-radius:26px;
-  background:rgba(10,10,30,.75);
-  backdrop-filter:blur(18px);
-  box-shadow:0 35px 90px rgba(0,0,0,.9);
-  color:#fff;
+  padding:36px 26px;
+  border-radius:28px;
+  background:#ffffff;
+  box-shadow:0 25px 60px rgba(0,0,0,.12);
   text-align:center;
-  animation:fadeUp .9s ease;
+  animation:fadeUp .7s ease;
 }
 
 @keyframes fadeUp{
-  from{opacity:0;transform:translateY(30px)}
+  from{opacity:0;transform:translateY(20px)}
   to{opacity:1;transform:translateY(0)}
 }
 
 /* LOGO */
 .logo img{
-  width:90px;
-  margin-bottom:14px;
+  width:92px;
+  margin-bottom:16px;
 }
 
 /* TITLE */
 .header h1{
-  font-size:28px;
-  letter-spacing:1px;
-  background:linear-gradient(90deg,#ffffff,#00f7ff,#ffffff);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  font-size:30px;
+  letter-spacing:.6px;
+  color:#1b3cff;
 }
 
 .header p{
   margin-top:6px;
   font-size:13px;
-  color:#cfd8ff;
+  color:#555;
 }
 
 /* COUNTER */
 .counter{
-  margin:18px 0;
+  margin:20px 0;
   font-size:16px;
   font-weight:800;
-  color:#ffd36e;
+  color:#ff8a00;
 }
 
 /* CONTENT */
@@ -97,34 +92,34 @@ body{
 .features p{
   font-size:14px;
   margin-bottom:14px;
-  line-height:1.4;
-  color:#f1f1f1;
+  color:#333;
+  line-height:1.45;
 }
 
 .features span{
-  color:#00f7ff;
+  color:#1b3cff;
   font-weight:800;
 }
 
-/* BAT BALL BUTTON */
+/* CTA BUTTON – LIGHT & ATTRACTIVE */
 .join-btn{
   position:relative;
-  margin-top:10px;
+  margin-top:14px;
   width:100%;
   padding:18px;
   border:none;
   border-radius:50px;
   font-size:15px;
   font-weight:900;
-  letter-spacing:.8px;
+  letter-spacing:.6px;
   cursor:pointer;
   color:#fff;
-  background:linear-gradient(135deg,#ff9f00,#ff005d);
-  box-shadow:0 18px 45px rgba(255,0,93,.45);
+  background:linear-gradient(135deg,#1b3cff,#00c6ff);
+  box-shadow:0 16px 40px rgba(27,60,255,.35);
   overflow:hidden;
 }
 
-/* BALL */
+/* BAT */
 .join-btn::before{
   content:"🏏";
   position:absolute;
@@ -135,11 +130,11 @@ body{
   animation:batSwing 1.6s infinite ease-in-out;
 }
 
-/* BAT HIT EFFECT */
+/* BALL */
 .join-btn::after{
   content:"⚾";
   position:absolute;
-  left:58px;
+  left:56px;
   top:50%;
   transform:translateY(-50%);
   font-size:18px;
@@ -163,14 +158,14 @@ body{
   display:none;
   margin-top:16px;
   font-size:13px;
-  color:#7dffb3;
+  color:#00a36c;
 }
 
 /* FOOTER */
 .footer{
   margin-top:22px;
   font-size:11px;
-  color:#cfcfff;
+  color:#777;
 }
 </style>
 </head>
@@ -185,18 +180,18 @@ body{
 
   <div class="header">
     <h1>Cric Skill Lord 🏟️</h1>
-    <p>IPL Skill Reading • Game Sense • Smart Analysis</p>
+    <p>IPL Skill Reading • Smart Cricket Intelligence</p>
   </div>
 
   <div class="counter">
-    🚀 70,126+ Active Followers
+    ⭐ 70,126+ Happy Subscribers
   </div>
 
   <div class="features">
-    <p>🧠 <span>Skill-Based Match Reading</span> — no blind calls</p>
-    <p>📊 <span>IPL Pitch & Momentum Logic</span></p>
-    <p>🔥 <span>Over-by-Over Game Flow</span></p>
-    <p>🛑 Only analysis • No betting • No hype</p>
+    <p>🧠 <span>Skill-First Match Reading</span></p>
+    <p>📊 <span>Over-by-Over IPL Analysis</span></p>
+    <p>🔥 <span>Momentum & Situation Logic</span></p>
+    <p>✅ Knowledge Only • No Betting</p>
   </div>
 
   <button class="join-btn" onclick="joinNow()">
@@ -208,7 +203,7 @@ body{
   </div>
 
   <div class="footer">
-    For informational & entertainment purposes only
+    For informational & entertainment purpose only
   </div>
 </div>
 
