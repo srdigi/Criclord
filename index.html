@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cric Skill Lord™ – IPL Match Intelligence</title>
+
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;
+n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)n=f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','863598106480693');
+fbq('track','PageView');
+</script>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',system-ui,sans-serif;
+}
+
+/* IPL BACKGROUND */
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:
+    radial-gradient(circle at top,#5f2cff,#12002b 70%);
+}
+
+/* MAIN CARD */
+.container{
+  width:92%;
+  max-width:420px;
+  padding:32px 26px;
+  border-radius:26px;
+  background:rgba(10,10,30,.75);
+  backdrop-filter:blur(18px);
+  box-shadow:0 35px 90px rgba(0,0,0,.9);
+  color:#fff;
+  text-align:center;
+  animation:fadeUp .9s ease;
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* LOGO */
+.logo img{
+  width:90px;
+  margin-bottom:14px;
+}
+
+/* TITLE */
+.header h1{
+  font-size:28px;
+  letter-spacing:1px;
+  background:linear-gradient(90deg,#ffffff,#00f7ff,#ffffff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.header p{
+  margin-top:6px;
+  font-size:13px;
+  color:#cfd8ff;
+}
+
+/* COUNTER */
+.counter{
+  margin:18px 0;
+  font-size:16px;
+  font-weight:800;
+  color:#ffd36e;
+}
+
+/* CONTENT */
+.features{
+  margin:22px 0;
+}
+
+.features p{
+  font-size:14px;
+  margin-bottom:14px;
+  line-height:1.4;
+  color:#f1f1f1;
+}
+
+.features span{
+  color:#00f7ff;
+  font-weight:800;
+}
+
+/* BAT BALL BUTTON */
+.join-btn{
+  position:relative;
+  margin-top:10px;
+  width:100%;
+  padding:18px;
+  border:none;
+  border-radius:50px;
+  font-size:15px;
+  font-weight:900;
+  letter-spacing:.8px;
+  cursor:pointer;
+  color:#fff;
+  background:linear-gradient(135deg,#ff9f00,#ff005d);
+  box-shadow:0 18px 45px rgba(255,0,93,.45);
+  overflow:hidden;
+}
+
+/* BALL */
+.join-btn::before{
+  content:"🏏";
+  position:absolute;
+  left:18px;
+  top:50%;
+  transform:translateY(-50%) rotate(-20deg);
+  font-size:22px;
+  animation:batSwing 1.6s infinite ease-in-out;
+}
+
+/* BAT HIT EFFECT */
+.join-btn::after{
+  content:"⚾";
+  position:absolute;
+  left:58px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:18px;
+  animation:ballFly 1.6s infinite ease-in-out;
+}
+
+@keyframes batSwing{
+  0%{transform:translateY(-50%) rotate(-20deg)}
+  40%{transform:translateY(-50%) rotate(25deg)}
+  100%{transform:translateY(-50%) rotate(-20deg)}
+}
+
+@keyframes ballFly{
+  0%{opacity:0;transform:translate(0,-50%)}
+  40%{opacity:1}
+  100%{opacity:0;transform:translate(140px,-120%)}
+}
+
+/* STATUS */
+.status{
+  display:none;
+  margin-top:16px;
+  font-size:13px;
+  color:#7dffb3;
+}
+
+/* FOOTER */
+.footer{
+  margin-top:22px;
+  font-size:11px;
+  color:#cfcfff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="logo">
+    <img src="logo.png" alt="Cric Skill Lord Logo">
+  </div>
+
+  <div class="header">
+    <h1>Cric Skill Lord 🏟️</h1>
+    <p>IPL Skill Reading • Game Sense • Smart Analysis</p>
+  </div>
+
+  <div class="counter">
+    🚀 70,126+ Active Followers
+  </div>
+
+  <div class="features">
+    <p>🧠 <span>Skill-Based Match Reading</span> — no blind calls</p>
+    <p>📊 <span>IPL Pitch & Momentum Logic</span></p>
+    <p>🔥 <span>Over-by-Over Game Flow</span></p>
+    <p>🛑 Only analysis • No betting • No hype</p>
+  </div>
+
+  <button class="join-btn" onclick="joinNow()">
+    SUBSCRIBE MY FREE CHANNEL
+  </button>
+
+  <div class="status" id="statusText">
+    Opening Telegram…
+  </div>
+
+  <div class="footer">
+    For informational & entertainment purposes only
+  </div>
+</div>
+
+<script>
+let joinIntent=false;
+function joinNow(){
+  joinIntent=true;
+  document.getElementById("statusText").style.display="block";
+  setTimeout(()=>{
+    window.location.href="https://t.me/+H3BYbbzFxqNiNjhl";
+  },600);
+}
+
+document.addEventListener("visibilitychange",()=>{
+  if(document.hidden && joinIntent){
+    fbq('trackCustom','TelegramJoinIntent');
+    joinIntent=false;
+  }
+});
+</script>
+
+</body>
+</html>
